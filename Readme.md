@@ -69,6 +69,7 @@ git clone <your-repo-url>
 cd blog-app
 ```
 ## Install dependencies
+```bash
 npm install
 Configure environment variables (.env file)
 DB_HOST=localhost
@@ -79,6 +80,7 @@ DB_PORT=3306
 PORT=5000
 Run the application
 npm run dev
+```
 
 The app will auto-create the database and tables if they do not exist.
 Open your browser at: http://localhost:5000
