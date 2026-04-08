@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+<h1 class="text-xl mb-6">Create Post</h1>
+
+<form method="POST" action="/create" class="space-y-4">
+
+  <input name="title" placeholder="Title"
+    class="w-full p-3 border rounded-lg" required />
+
+  <textarea name="content" rows="8"
+    class="w-full p-3 border rounded-lg"
+    placeholder="Content..." required></textarea>
+
+  <button class="bg-black text-white px-6 py-2 rounded-lg">
+    Publish
+  </button>
+
+</form>
+
+<%- include("partials/footer") %>
