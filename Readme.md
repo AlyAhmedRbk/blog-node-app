@@ -67,3 +67,41 @@ The app supports **full CRUD operations** for blog posts, **auto-creates the dat
 ```bash
 git clone <your-repo-url>
 cd blog-app
+```
+## Install dependencies
+npm install
+Configure environment variables (.env file)
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=yourpassword
+DB_NAME=blogdb
+DB_PORT=3306
+PORT=5000
+Run the application
+npm run dev
+
+The app will auto-create the database and tables if they do not exist.
+Open your browser at: http://localhost:5000
+
+### 🛣️ API Endpoints
+Method	Route	Description
+GET	/api/posts	Get all posts (with pagination)
+GET	/api/posts/:id	Get single post by ID
+POST	/api/posts	Create a new post
+PUT	/api/posts/:id	Update a post by ID
+DELETE	/api/posts/:id	Delete a post by ID
+### 💡 Notes
+Default admin user is created automatically (name: Admin User, email: admin@example.com)
+The app is production-ready and can easily be migrated to AWS RDS.
+Port conflict is handled gracefully with auto-increment retry logic.
+###🖌 UI
+Modern, minimalistic design using TailwindCSS
+Clean forms for creating posts
+Responsive layout
+
+### 🔥 Future Improvements
+User authentication & authorization (JWT)
+Edit/Delete posts via UI
+Dark mode toggle
+Docker setup + AWS deployment
+AI-powered blog generator
